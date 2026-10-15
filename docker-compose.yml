@@ -1,0 +1,8 @@
+
+services:
+  monitor:
+    container_name: monitor-app
+    build: .
+    ports:
+      - "${MONITOR_PORT}:3000"
+    restart: always
